@@ -8,9 +8,9 @@
         "airbnb-base"
     ],
     "parserOptions": {
-        "ecmaVersion": 13
+        "ecmaVersion": "latest"
     },
     "rules": {
-        "no-console": true
+        "no-console": "off"
     }
 }
