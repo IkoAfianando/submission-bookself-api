@@ -18,4 +18,8 @@ class FizzBuzz {
             }
         }
     }
+
+    buzzFizz() {
+        return this.fizzBuzz(100);
+    }
 }
