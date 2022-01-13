@@ -9,6 +9,8 @@ class FizzBuzz {
             const data3 = i % 5 === 0;
             if(data1) {
                 console.log(`FizzBuzz ${i}`);
+            }else if(data2) {
+                console.log(`Fizz ${i}`);
             }
         }
     }
