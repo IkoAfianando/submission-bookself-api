@@ -1,20 +1,21 @@
-class FizzBuzz{
+class FizzBuzz {
     constructor(name) {
         this.name = name;
     }
 
     fizzBuzz(data) {
-        for(let i = 1; i <= data; i++) {
+        for (let i = 1; i <= data; i++) {
             const data1 = i % 3 === 0 && i % 5 === 0;
             const data2 = i % 3 === 0;
             const data3 = i % 5 === 0;
-            if(data1) {
+            if (data1) {
                 console.log(`FizzBuzz ${i}`);
-            }else if(data2) {
+            } else if (data2) {
                 console.log(`Fizz ${i}`);
-            }else if(data3) {
-                console.log(`Buzz ${i}`);0
-            }else {
+            } else if (data3) {
+                console.log(`Buzz ${i}`);
+                0
+            } else {
                 console.log(i);
             }
         }
@@ -25,17 +26,37 @@ class FizzBuzz{
     }
 
     factorial(value) {
-        if(value <= 0) {
+        if (value <= 0) {
             return 1;
         }
 
         let result = 1;
-        for(let i = result; i <= value; i++) {
+        for (let i = result; i <= value; i++) {
             result *= i;
         }
         return result;
+    }
+
+    factorialRecursive(value) {
+        if (value <= 0) {
+            return 1;
+        } else {
+            return value * this.factorialRecursive(value - 1);
+        }
+    }
+
+    factorialTailRecursive(total, value) {
+        if (value <= 0) {
+            return total;
+        } else {
+            return this.factorialTailRecursive(total * value, value - 1);
+        }
     }
 }
 
 const fizzBuzz = new FizzBuzz("Iko Afianando");
 console.log(fizzBuzz.factorial(5));
+fizzBuzz.fizzBuzz(100);
+console.log(fizzBuzz.sayHello("Iko"));
+console.log(fizzBuzz.factorialRecursive(5));
+console.log(fizzBuzz.factorialTailRecursive(1,5));
