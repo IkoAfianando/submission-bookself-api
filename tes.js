@@ -12,6 +12,10 @@ class FizzBuzz{
                 console.log(`FizzBuzz ${i}`);
             }else if(data2) {
                 console.log(`Fizz ${i}`);
+            }else if(data3) {
+                console.log(`Buzz ${i}`);0
+            }else {
+                console.log(i);
             }
         }
     }
