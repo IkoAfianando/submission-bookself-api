@@ -36,3 +36,6 @@ class FizzBuzz{
         return result;
     }
 }
+
+const fizzBuzz = new FizzBuzz("Iko Afianando");
+console.log(fizzBuzz.factorial(5));
