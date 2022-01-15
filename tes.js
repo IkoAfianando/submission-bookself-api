@@ -8,6 +8,9 @@ class FizzBuzz{
             const data1 = i % 3 === 0 && i % 5 === 0;
             const data2 = i % 3 === 0;
             const data3 = i % 5 === 0;
+            if(data1) {
+                console.log(`FizzBuzz ${i}`);
+            }
         }
     }
 }
