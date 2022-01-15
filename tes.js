@@ -23,4 +23,16 @@ class FizzBuzz{
     sayHello(name) {
         return `Hello ${name}, My Name is ${this.name}`;
     }
+
+    factorial(value) {
+        if(value <= 0) {
+            return 1;
+        }
+
+        let result = 1;
+        for(let i = result; i <= value; i++) {
+            result *= i;
+        }
+        return result;
+    }
 }
