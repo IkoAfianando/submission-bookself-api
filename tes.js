@@ -44,5 +44,14 @@ class FizzBuzz{
         }
     }
 
-
+    factorialTailRecursive(total, value) {
+        if(value <= 0) {
+            return total;
+        }else {
+            return this.factorialTailRecursive(total * value, value - 1);
+        }
+    }
 }
+
+const fizzBuzz = new FizzBuzz("Iko Afianando");
+console.log(fizzBuzz.factorialTailRecursive(1, 5));
