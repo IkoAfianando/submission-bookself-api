@@ -55,3 +55,4 @@ class FizzBuzz{
 
 const fizzBuzz = new FizzBuzz("Iko Afianando");
 console.log(fizzBuzz.factorialTailRecursive(1, 5));
+console.log(fizzBuzz.factorialRecursive(5));
