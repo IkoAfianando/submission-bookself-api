@@ -31,9 +31,9 @@ class FizzBuzz{
 
         let result = 1;
         for(let i = 1; i <= value; i++) {
-            result *= 1;
+            result *= i;
         }
-        return result
+        return result;
     }
 
     factorialRecursive(value) {
