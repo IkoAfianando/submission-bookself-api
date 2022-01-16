@@ -14,7 +14,15 @@ class FizzBuzz{
                 console.log(`Fizz ${i}`);
             }else if(data3) {
                 console.log(`Buzz ${i}`);
+            }else {
+                console.log(i);
             }
         }
     }
+
+    sayHello(name) {
+        return `Hello ${name}, My Name is ${this.name} `;
+    }
+
+
 }
