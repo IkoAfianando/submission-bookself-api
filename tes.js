@@ -36,4 +36,13 @@ class FizzBuzz{
         return result
     }
 
+    factorialRecursive(value) {
+        if(value <= 0) {
+            return 1;
+        }else {
+            return value * this.factorialRecursive(value - 1);
+        }
+    }
+
+
 }
