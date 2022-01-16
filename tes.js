@@ -58,3 +58,4 @@ console.log(fizzBuzz.factorialTailRecursive(1, 5));
 console.log(fizzBuzz.factorialRecursive(5));
 console.log(fizzBuzz.factorial(5));
 console.log(fizzBuzz.sayHello("Joko"));
+fizzBuzz.fizzBuzz(100);
