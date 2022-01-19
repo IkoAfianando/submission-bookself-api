@@ -28,6 +28,25 @@ const routes = [
     path: '/books/{id}',
     handler: deleteBooksHandler,
   },
+
+  {
+    method: 'post',
+    path: '/login',
+    handler: (request, h) => {
+      const { username, password } = request.payload;
+      if (username === 'admin' && password === 'admin') {
+        return h.response({
+          statusCode: 200,
+          message: 'Login Success',
+        });
+      }
+      return h.response({
+        statusCode: 401,
+        message: 'Login Failed',
+      });
+    },
+
+  }
 ];
 
 module.exports = routes;
