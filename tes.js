@@ -29,3 +29,7 @@ class FizzBuzz {
         return `GoodBye ${name}, My Name is ${this.fullName}`;
     }
 }
+
+const fizzBuzz = new FizzBuzz("Iko");
+fizzBuzz.fizzBuzz(100);
+console.log(fizzBuzz.sayHello("Joko"));
