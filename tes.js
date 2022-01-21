@@ -3,4 +3,9 @@ class FizzBuzz {
         this.name = name;
     }
 
+    fizzBuzz(data) {
+        for(let i = 1; i <= data; i++) {
+
+        }
+    }
 }
