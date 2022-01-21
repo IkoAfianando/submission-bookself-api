@@ -1,6 +1,7 @@
 class FizzBuzz {
     constructor(name) {
         this.name = name;
+        this.fullName = "Iko Afianando";
     }
 
     fizzBuzz(data) {
@@ -22,5 +23,9 @@ class FizzBuzz {
 
     sayHello(name) {
         return `Hello ${name}, My Name is ${this.name}`;
+    }
+
+    sayGoodBye(name) {
+        return `GoodBye ${name}, My Name is ${this.fullName}`;
     }
 }
